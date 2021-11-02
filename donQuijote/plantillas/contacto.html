@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+
+
+<h1>Contáctanos</h1>
+
+<form action="{% url 'Contacto' %}" method="POST">{% csrf_token %}
+
+    <p>Asunto: <input type="text" name="asunto" id="asunto" required></p>
+
+    <p>Email: <input type="text" name="email" id="email" required></p>
+
+    <p>Mensaje: <textarea name="mensaje" id="mensaje" cols="30" rows="10" required></textarea></p>
+
+    <input type="submit" value="Enviar" id="btnEnviar">
+
+</form>
+
+{% endblock %}

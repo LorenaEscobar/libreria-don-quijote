@@ -1,0 +1,60 @@
+
+    {% extends "base.html" %}
+
+    {% load static %}
+    
+    {% block content %}
+
+    <div>
+        <p>
+             
+            {% for producto in productos %}
+
+            
+   <!-- Heading -->
+   <section class="page-section clearfix">
+    <div class="container">
+      <div class="intro">
+        <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="{{producto.imagen.url}}" alt="">
+        <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+          <h2 class="section-heading mb-4" >
+            <span class="section-heading-lower">{{producto.nombre}}</span>
+            <span class="section-heading-upper">{{producto.autor}}</span>
+            <span class="section-heading-upper">{{producto.editorial}}</span>
+            <!-- <span class="section-heading-upper">{{producto.categoria}}</span>-->
+            <span class="section-heading-upper">{{producto.precio}}</span>
+          </h2>
+          <p class="mb-3">En la puertra de tu casa en menos de 48 h con el envío normal. En menos de 24 h con el envío express.
+          </p>
+         
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+            {% endfor %}
+    
+
+    
+            
+
+        
+        
+        
+
+
+    
+
+    
+
+        </p>
+    </div>
+
+    {% endblock %}
+
+   <!-- nombre = models.CharField(max_length=50)
+    autor = models.CharField(max_length=50)
+    editorial = models.CharField(max_length=30)
+    precio = models.IntegerField()
+    imagen = models.ImageField(upload_to='media')--> 

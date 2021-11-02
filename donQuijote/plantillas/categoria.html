@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+<div>
+    <p>
+         
+        {% for categoria in categorias %}
+
+        <h2 style="color: white;">{{categoria.nombre}}</h2>
+        
+        
+        
+    
+
+        {% endfor %}
+
+
+
+        
+
+    
+    
+    
+
+
+
+
+
+
+    </p>
+</div>
+
+{% endblock %}
