@@ -8,7 +8,7 @@ class ClientesAdmin(admin.ModelAdmin):
 
 class ProductoAdmin(admin.ModelAdmin):
     list_filter=("nombre", ) #después poner por categoría
-    list_display=("nombre", "autor", "editorial", "precio", "imagen")
+    list_display=("nombre", "autor", "editorial", "precio", "categoria", "imagen")
 
 
 class CompraAdmin(admin.ModelAdmin):
