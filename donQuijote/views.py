@@ -1,4 +1,4 @@
-from django.http import HttpResponse
+
 import datetime
 from django.core.mail import send_mail
 from django.template import loader
