@@ -6,9 +6,9 @@
 
 
 
-<h1>Contáctanos</h1>
+<h1 class="catFil">Contáctanos</h1>
 
-<form action="{% url 'Contacto' %}" method="POST">{% csrf_token %}
+<form action="{% url 'Contacto' %}" method="POST" class="formulario">{% csrf_token %}
 
     <p>Asunto: <input type="text" name="asunto" id="asunto" required></p>
 

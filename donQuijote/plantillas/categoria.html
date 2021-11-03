@@ -9,7 +9,11 @@
          
         {% for categoria in categorias %}
 
-        <h2 style="color: white;">{{categoria.nombre}}</h2>
+       <!-- <h2 style="color: white;">{{categoria.nombre}}</h2> -->
+
+     <h2><a href="{% url 'categoriaFiltrada' categoria.id%}"class="linksCat">{{categoria.nombre}}</a></h2>
+    
+    <br/>
         
         
         

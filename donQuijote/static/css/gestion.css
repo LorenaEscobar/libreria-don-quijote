@@ -20,7 +20,7 @@ p {
 }
 
 .text-faded {
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.986);
 }
 
 .site-heading {
@@ -276,4 +276,21 @@ ul.errorlist{
   padding-top: .75rem;
   font-style: italic;
   color: red;
+}
+
+.linksCat{
+  color: white !important;
+  
+}
+
+.catFil{
+  color: white;
+}
+
+.formulario{
+  font-family: 'Lora' !important;
+  color: white !important;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  line-height: 28px !important;
 }
