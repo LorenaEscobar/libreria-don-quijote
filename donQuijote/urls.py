@@ -31,6 +31,7 @@ urlpatterns = [
     path('contacto',views.contacto, name="Contacto"),
    # path('gestionCompra/', include('gestionCompra.urls')),
     path('categoria',views.categoria, name="Categoria"),
+    path('categoria/<categoria_id>/',views.categoriaFiltrada, name="categoriaFiltrada"),
     #path('blog',views.blog, name="Blog"),
   
     #path('saludo/', saludo),

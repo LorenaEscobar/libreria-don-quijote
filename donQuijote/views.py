@@ -21,11 +21,21 @@ def contacto(request):
 
 #def blog(request):
 #    return render(request,"blog.html")
+
+
+def categoriaFiltrada(request, categoria_id):
+    cat=Categoria.objects.get(id=categoria_id)
+    productos=Producto.objects.filter(categoria=cat)
+    return render(request, "categoriaFiltrada.html", {"categoria":cat, "productos":productos})
     
 
 def categoria(request):
     categorias= Categoria.objects.all()
     return render(request, "categoria.html", {"categorias":categorias})
+
+
+
+
 
 
 
