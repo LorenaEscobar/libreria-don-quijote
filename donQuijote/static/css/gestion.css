@@ -293,4 +293,11 @@ ul.errorlist{
   font-size: 16px !important;
   font-weight: 400 !important;
   line-height: 28px !important;
+  padding-left: 10px !important;
+}
+
+.atencion{
+  max-width: 100%;
+
+ 
 }

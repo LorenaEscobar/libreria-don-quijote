@@ -8,16 +8,32 @@
 
 <h1 class="catFil">Contáctanos</h1>
 
-<form action="{% url 'Contacto' %}" method="POST" class="formulario">{% csrf_token %}
+<form action="{% url 'Contacto' %}" method="POST" class="formulario"  style="margin-left: auto;">{% csrf_token %}
 
-    <p>Asunto: <input type="text" name="asunto" id="asunto" required></p>
+    <label for="asunto">Asunto:</label><br>
+    <input type="text" name="asunto" id="asunto" required style="width: 30%;"><br>
 
-    <p>Email: <input type="text" name="email" id="email" required></p>
+    <label for="email">Email:</label><br>
+    <input type="text" name="email" id="email" required style="width: 30%;"><br>
 
-    <p>Mensaje: <textarea name="mensaje" id="mensaje" cols="30" rows="10" required></textarea></p>
+    <label for="mensaje">Mensaje:</label><br>
+    <textarea name="mensaje" id="mensaje" cols="37" rows="5" required></textarea><br><br>
 
     <input type="submit" value="Enviar" id="btnEnviar">
 
 </form>
+
+<ul>
+    <li><a href="#"><img src="{% static '/img/atencion.png' %}"  width="90" height="70"/></a> </li>
+    <li><a href="#"><img src="{% static '/img/envios.png' %}" width="90" height="90"/></a> </li>
+    <li><a href="#"><img src="{% static '/img/formaPago.png' %}" width="140" height="100"/></a></li>
+    <li><a href="#"><img src="{% static '/img/local.png' %}"  width="200" height="150"/></a></li>
+</ul>
+    
+    
+
+
+
+
 
 {% endblock %}
