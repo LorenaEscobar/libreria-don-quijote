@@ -15,6 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.urls.conf import include
 from gestionCompra.models import Producto
 from donQuijote import views
 from django.conf import settings
@@ -32,7 +33,7 @@ urlpatterns = [
    # path('gestionCompra/', include('gestionCompra.urls')),
     path('categoria',views.categoria, name="Categoria"),
     path('categoria/<categoria_id>/',views.categoriaFiltrada, name="categoriaFiltrada"),
-    #path('blog',views.blog, name="Blog"),
+    path('carro/', include('carro.urls')),
   
     #path('saludo/', saludo),
     #path('Hija/',Hija),

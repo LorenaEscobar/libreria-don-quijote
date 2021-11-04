@@ -1,9 +1,17 @@
 
     {% extends "base.html" %}
 
+    
     {% load static %}
+     <p style="color: white;"> gjfgdsf</p>
+    
+    
+
+ 
     
     {% block content %}
+
+    <div style="color: white;">{% include "carro/widget.html" %}</div>
 
     <div>
         <p>
@@ -25,7 +33,9 @@
             <span class="section-heading-upper">{{producto.categoria}}</span>
             <span class="section-heading-upper">${{producto.precio}}</span>
           </h2>
-         
+          <div class="card_footer text-center">
+             <a href="{% url 'carro:agregar' producto.id%}" class="btn btn-success">Agregar al carrito</a>
+          </div>
         </div>
       </div>
     </div>
