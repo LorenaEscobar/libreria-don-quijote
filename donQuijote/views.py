@@ -1,6 +1,7 @@
 
 import datetime
 from django.core.mail import send_mail
+from django.http import request
 from django.template import loader
 from django.conf import settings
 from django.shortcuts import render
@@ -74,6 +75,18 @@ def Hija2(request):
         fecha_actual = datetime.datetime.now()
         return render(request, "hija2.html", {"dameFecha":fecha_actual})
 
+def atencion(request):
+    return render(request, "atencion.html", {})
 
+
+def envio(request):
+    return render(request, "envio.html", {})
+
+
+def pago(request):
+    return render(request, "pago.html", {})
+
+def local(request):
+    return render(request, "local.html", {})
 
  

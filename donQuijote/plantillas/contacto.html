@@ -4,9 +4,9 @@
 
 {% block content %}
 
-<!--Arreglar el formulario con html y no tocar nada-->
 
-<h1 class="catFil">Contáctanos</h1>
+
+<h1 class="catFil">Contactanos</h1>
 
 <form action="{% url 'Contacto' %}" method="POST" class="formulario"  style="margin-left: auto;">{% csrf_token %}
 
@@ -22,12 +22,14 @@
     <input type="submit" value="Enviar" id="btnEnviar">
 
 </form>
+<br>
+<br>
 
 <ul>
-    <li><a href="#"><img src="{% static '/img/atencion.png' %}"  width="90" height="70"/></a> </li>
-    <li><a href="#"><img src="{% static '/img/envios.png' %}" width="90" height="90"/></a> </li>
-    <li><a href="#"><img src="{% static '/img/formaPago.png' %}" width="140" height="100"/></a></li>
-    <li><a href="#"><img src="{% static '/img/local.png' %}"  width="200" height="150"/></a></li>
+    <li><a href="{% url 'atencion' %}"><img src="{% static '/img/atencion.png' %}"  width="90" height="70"/></a><h5 style="color: white;">Atención al cliente</h5></li><br>
+    <li><a href="{% url 'envio' %}"><img src="{% static '/img/envios.png' %}" width="90" height="90"/></a><h5 style="color: white;">Envío</h5> </li><br>
+    <li><a href="{% url 'pago' %}"><img src="{% static '/img/formaPago.png' %}" width="140" height="100"/></a><h5 style="color: white;">Forma de pago</h5></li><br>
+    <li><a href="{% url 'local' %}"><img src="{% static '/img/local.png' %}"  width="200" height="150"/></a><h5 style="color: white;">Visitá nuestro local</h5></li>
 </ul>
     
     

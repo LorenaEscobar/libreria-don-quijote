@@ -34,6 +34,10 @@ urlpatterns = [
     path('categoria',views.categoria, name="Categoria"),
     path('categoria/<categoria_id>/',views.categoriaFiltrada, name="categoriaFiltrada"),
     path('carro/', include('carro.urls')),
+    path('atencion',views.atencion, name="atencion"),
+    path('envio',views.envio, name="envio"),
+    path('pago',views.pago, name="pago"),
+    path('local',views.local, name="local"),
   
     #path('saludo/', saludo),
     #path('Hija/',Hija),

@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+<img src="{% static '/img/envioprod.jpg' %}"  width="700" height="400" style="margin-left: 20%;" >
+
+<h1 style="color: white; font-size: 50px;">Envíos dentro del país:</h1>
+
+
+<table class="table table-bordered" style="color: white;  width: 5%;
+height: 50px;">
+    
+    <thead>
+        <tr>
+            <th colspan="2" class="text-center">
+
+                Envío Nacionales
+
+            </th>
+        </tr>
+
+        <tr>
+            <th>Región</th>
+            <th>Costo</th>
+        </tr>
+
+    
+
+
+
+    </thead>
+
+    <tbody>
+        
+            <tr class="text-center">
+                <td>Buenos Aires</td>
+                <td>$195</td>
+                
+            </tr>
+            <tr class="text-center">
+                <td>Catamarca</td>
+                <td>$265</td>
+            </tr>
+            <tr class="text-center">
+                <td>Chaco</td>
+                <td>$265</td>
+            </tr>
+            <tr class="text-center">
+                <td>Chubut</td>
+                <td>$495</td>
+            </tr>
+            
+
+        
+          
+       
+
+    </tbody>
+
+    
+
+
+</table>
+
+{% endblock %}
