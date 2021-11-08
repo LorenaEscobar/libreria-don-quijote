@@ -46,3 +46,5 @@ def limpiar_carro(request, producto_id):
     carro.limpiar_carro()
 
     return redirect("Catalogo") #revisar esto
+
+

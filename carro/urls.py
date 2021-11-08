@@ -9,4 +9,5 @@ urlpatterns = [
     path("restar/<int:producto_id>/",views.restar_producto, name="restar"),
     path("limpiar/",views.limpiar_carro, name="limpiar"),
     
+    
 ]

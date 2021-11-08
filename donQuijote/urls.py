@@ -38,6 +38,9 @@ urlpatterns = [
     path('envio',views.envio, name="envio"),
     path('pago',views.pago, name="pago"),
     path('local',views.local, name="local"),
+    path('carrito',views.carrito, name="carrito"),
+    
+
   
     #path('saludo/', saludo),
     #path('Hija/',Hija),

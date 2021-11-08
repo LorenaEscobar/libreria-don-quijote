@@ -89,4 +89,9 @@ def pago(request):
 def local(request):
     return render(request, "local.html", {})
 
+def carrito(request):
+    return render(request, "carro/carrito.html", {})
+
+
+
  
