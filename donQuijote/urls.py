@@ -39,6 +39,7 @@ urlpatterns = [
     path('pago',views.pago, name="pago"),
     path('local',views.local, name="local"),
     path('carrito',views.carrito, name="carrito"),
+    path('registro/', views.registro, name="registro")
     
 
   

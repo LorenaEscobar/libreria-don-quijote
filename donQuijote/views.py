@@ -4,8 +4,9 @@ from django.core.mail import send_mail
 from django.http import request
 from django.template import loader
 from django.conf import settings
-from django.shortcuts import render
-
+from django.shortcuts import render, redirect
+from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth import login, logout, authenticate
 from gestionCompra.models import Categoria, Producto
 
 def home(request):
@@ -91,6 +92,20 @@ def local(request):
 
 def carrito(request):
     return render(request, "carro/carrito.html", {})
+
+def registro(request):
+
+    if request.method == "POST":
+        form = UserCreationForm(request.POST)
+        if form.is_valid():
+            usuario = form.save()
+            login(request, usuario)
+            return redirect("http://127.0.0.1:8000/")
+        else:
+            for msg in form.error_messages:
+                print(form.error_messages[msg])
+    form = UserCreationForm
+    return render(request, "registro.html", {"form":form})
 
 
 
